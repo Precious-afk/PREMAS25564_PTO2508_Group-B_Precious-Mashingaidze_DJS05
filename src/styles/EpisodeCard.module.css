@@ -1,0 +1,48 @@
+.episode {
+  display: flex;
+  gap: 0.85rem;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 0.75rem;
+  list-style: none;
+}
+
+.thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.number {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+
+.title {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.description {
+  font-size: 0.82rem;
+  color: var(--grey-text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .episode {
+    flex-direction: column;
+  }
+
+  .thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
